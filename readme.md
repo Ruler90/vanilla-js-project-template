@@ -8,7 +8,7 @@ This template can help you quickly start writing your Vanilla JS project and the
 
 2. Use ```npm install``` to install all dependencies listed in package.json.
 
-3. Create ESLint configuration file (I'm using airbnb styleguide).
+3. Use my ESLint configuration file (I'm using airbnb styleguide) or delete it and create new.
 
 4. You are ready to go.
 

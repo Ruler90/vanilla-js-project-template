@@ -2,40 +2,36 @@
 
 This template can help you quickly start writing your Vanilla JS project and then bundle it with Webpack (you can use JS modules or import .css files into .js files too).
 
-### Quick start:
+**Update 2020-07-22**  
+Removed all dependencies so ```npm install``` won't work. If you install everything as described below, you'll get most recent version of every dependency.
 
-1. Download this folder and make it your local repo.
-
-2. Use ```npm install``` to install all dependencies listed in package.json.
-
-3. Use my ESLint configuration file (I'm using airbnb styleguide) or delete it and create new.
-
-4. You are ready to go.
-
-6. To start webpack-dev-server, use ```npm run start```  
-To bundle, minify and uglify all js and css code, use ```npm run build```
-
-### Detailed start guide:
+### Start guide:
 
 **1. Download this folder and make it your local repo.**
 
-**2. Delete package.json and package-lock.json files and then use:**
+**2. Create package.json file and install dependencies:**
 ```
 npm init
 npm install --save-dev @babel/core @babel/cli @babel/preset-env babel-loader css-loader style-loader webpack webpack-cli webpack-dev-server
 ```
 
-**3. Add scripts to package.json file:**
+**3. Add two scripts to package.json file:**
 ```
 "start": "webpack-dev-server --mode development",
 "build": "webpack --mode production --watch"
 ```
+To start webpack-dev-server, use ```npm run start```  
+To bundle, minify and uglify all js and css code, use ```npm run build```
 
 **4. ESLint:**
 ```
 npm install --save-dev eslint babel-eslint
 ```
-Create ESLint config file and add parser in .eslintrc:
+To use my ESLint configuration file:
+```
+npm install --save-dev eslint-config-airbnb
+```
+or you can delete it, create new ESLint config file and add parser in .eslintrc:
 ```
 "parser": "babel-eslint"
 ```
